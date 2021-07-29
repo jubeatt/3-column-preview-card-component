@@ -37,11 +37,11 @@ body .container {
 
 .card {
   background-color: #e38826;
-  /* default */
+  /* default-bg-color */
   color: #e38826;
-  /* default */
+  /* default-color */
   padding: 40px;
-  /* default */
+  /* default-spacing */
 }
 .card .card__pic {
   display: block;
@@ -95,7 +95,7 @@ body .container {
     display: flex;
   }
   .main-wrap .container .card {
-    flex-basis: 33.333333%;
+    flex: 1;
     display: flex;
     flex-direction: column;
   }
