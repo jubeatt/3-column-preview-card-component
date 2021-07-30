@@ -2,7 +2,7 @@
 
 This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-**<font size="4">友情提示：如果你想看中文解說，可以點[這裡](#)🎉</font>**
+**<font size="4">友情提示：如果你想看中文解說，可以點[這裡](https://github.com/jubeatt/3-column-preview-card-component-main/blob/master/README-zh.md)🎉</font>**
 
 ## Table of content
 
