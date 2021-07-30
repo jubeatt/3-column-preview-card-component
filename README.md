@@ -2,25 +2,24 @@
 
 This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-這是來自[Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)的解答。  
-Frontend Mentor challenges 是一個藉由實際建立專案，來加強 coding 技術的網站。
+**<font size="4">友情提示：如果你想看中文解說，可以點[這裡](#)🎉</font>**
 
-## Table of content 大綱
+## Table of content
 
-- [Overview（總覽）](#overview（總覽）)
-  - [The challenge （關於這份挑戰）](#the-challenge（關於這份挑戰）)
-  - [Screenshot （螢幕截圖）](#screenshot（螢幕截圖）)
-  - [Links （網站連結）](#links（連結）)
-- [My process （工作流程）](#my-process（工作流程）)
-  - [Built with （使用的工具）](#built-with（使用的工具）)
-  - [What I learned（我學到什麼）](#what-i-learned（我學到什麼）)
-- [Featurs（特色）](#featurs（特色）)
-- [Author（關於作者）](#author（關於作者）)
-- [Acknowledgments（致謝）](#acknowledgments（致謝）)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Featurs](#featurs)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Overview（總覽）
+## Overview
 
-### The challenge（關於這份挑戰）
+### The challenge
 
 Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
 
@@ -31,26 +30,17 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements <small>（The Learn more button）</small>
 
-你的挑戰是建立出一個三欄式的卡片組件，盡你所能的讓它能夠看起來越接近設計稿越好。
-
-你可以使用任何你喜歡的工具來完成這份挑戰。所以如果你有某個你想要練習的工具，就盡管去嘗試吧！
-
-提示－你的使用者應該要能夠：
-
-- 在他們裝置上得到最佳化的佈局
-- 從互動式元件上獲得 "互動（interactive）" 的效果 <small>（Learn more 按鈕）</small>
-
-### Screenshot（螢幕截圖）
+### Screenshot
 
 ![src-desktop](README-img/scr-desktop.jpg)
 
-### Links（連結）
+### Links
 
 - Live Site URL: [Here](https://jubeatt.github.io/3-column-preview-card-component-main/)🥑
 
-## My process（工作流程）
+## My process
 
-### Built with（使用的工具）
+### Built with
 
 - Mobile-first workflow
 - Semantic HTML5 markup
@@ -59,15 +49,13 @@ Your users should be able to:
 - BEM (methodology)
 - [reset.css](https://meyerweb.com/eric/tools/css/reset/) - For style
 
-### What I learned（我學到什麼）
+### What I learned
 
-#### Basic of SCSS（SCSS 基本操作）
+#### Basic of SCSS
 
-- Variable 變數
+- Variable
 
 I learned some concepts of variables, It can make things easy when setting some base style like `color`, `font-size`, etc.
-
-基本的變數觀念，可以讓我們做一些基本設定的時候變得更加的方便。
 
 ```scss
 // colors
@@ -96,11 +84,7 @@ All you need is to change the variable.
 
 You don't have to change everything one by one like CSS as before.
 
-這裡主要以網頁會用到的色彩，及文字的相關設定來做為變數。
-
-設立變數最大的好處是，當日後要維護或是更新時，你只要針對變數的部分來做調整，而不用像寫 CSS 一樣還得一個一個去設定，而且也很一目了然！
-
-- Nesting 巢狀結構
+- Nesting
 
 ```scss
 // layout
@@ -124,12 +108,6 @@ Conversely, `.main-wrap` and `.container` have a same parent `body`.
 
 In addition, The SCSS code on top compiles to CSS will look like this:
 
-巢狀結構最大的好處在於能夠一眼看出每個 class 之間的相依關係。
-
-以上面來說，`body`下有 `.main-wrap` 與 `.container`這兩個子層，或反過來說，`main-wrap`與`.continaer`都有一個共同的父層`body`。
-
-另外，上面的 SCSS 編譯成 CSS 後會長這樣：
-
 ```css
 body {
   /* ... */
@@ -147,23 +125,14 @@ body .container {
 In my opinion, try to figure out how the CSS be compiled, it would be better than remember that by rote.  
 After all, SCSS is just a preprocessor, The essence of it is still CSS.
 
-So if you write comments by using `//` in SCSS, there is no comment in CSS after compilation.
-
+So if you write comments by using `//` in SCSS, there is no comment in CSS after compilation.  
 If you want to create comments in the CSS, you have to write comments by using `/* ... */` in your SCSS.
 
-我覺得試著去理解它是怎麼被編譯成 CSS，會比去死記硬記來的有幫助，  
-畢竟 SCSS 只是個預處理器，它的本質還是 CSS。
+- 「&」 get close to parent
 
-順道一提，註解符號 `//` 只有在 SCSS 時它才認得出來。  
-所以如果你在 SCSS 中用 `//` 來寫註解，在編譯成 CSS 時是不會有註解的。
+This is a very useful selector that can make children nearby its parent with **"no gaps"**.
 
-如果你希望 CSS 中也能有註解的話，就得在 SCSS 中使用 `/* ... */` 的方式來撰寫。
-
-- & get close to parent 與父層無縫接軌
-
-這是一個非常有用的選取器，可以讓你把子層與父層給 **"無縫"** 的連接起來。
-
-來看個例子吧：
+Let's see an example:
 
 ```scss
 .btn {
@@ -174,7 +143,7 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-等於：
+equal to:
 
 ```scss
 .btn {
@@ -185,32 +154,32 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-所以無縫的意思就是指 「父層與子層之間不會有一個空格（那條縫）」，這是我自己發明的記法，我覺得這樣比較好理解 😆。
+As you can see, there is no **"white space"** between the parent and the children, and that's why I said there are **"no gaps"**. Personally, I think it is more easily to remember that, so I call it **"no gaps"**.😆
 
-這個用法很常用在 `:hover`, `:focus`, `:active`等等的**擬類別**狀態上，所以很重要哦！
+It's usually come with **pseudo-class** like `:hover`, `:focus`, `:focus` and so on.  
+So keep in mind. it's important.
 
-#### Get familiar with BEM （與 BEM 培養感情）
+#### Get familiar with BEM
 
-當你學會 SCSS 後，再搭配 BEM 的方式來設計 class 名稱，會發現這是一個很方便的組合。
-如果你不知道什麼是 BEM 的話，你可以先看一下這篇[文章](https://ithelp.ithome.com.tw/articles/10160545)。
+After you learned SCSS, It's time to meet BEM. It's a good combination when you put them together.  
+<small>Help：If you don't know what is BEM, you can read this [article](https://css-tricks.com/bem-101/) first.</small>
 
-[article](https://css-tricks.com/bem-101/)
+In brief, the main points of BEM are :
 
-簡單來說，BEM 的三大概念就是：
+1. Block
+2. Element
+3. Modifirer
 
-1. Block 區塊
-2. Element 元素
-3. Modifirer 修飾子
+- Structure
 
-- Structure 結構
-
-所以照著 BEM 的規則，我把這個挑戰的架構切割成下圖：
+So, follow the rules of BEM, I build a structure like the following picture :
 
 ![bem-structure](README-img/bem-structure.jpg)
 
-簡單來說，這裡我把 `card` 當作是一個組件（component），利用這個組件我們就能產出很多張卡片，以及利用 `Modifier` 來為卡片添加不同的樣式。
+Here, I regard `card` as a **"component"**, so we can create a lot of cards by using it.  
+Also, The `Modifier` would allow us to build different style for the card.
 
-所以原始碼就會如下：
+So the code will look like :
 
 ```html
 <!-- card (Block) & card--dark-cyan (Modifier) -->
@@ -232,12 +201,10 @@ If you want to create comments in the CSS, you have to write comments by using `
 </section>
 ```
 
-當你切割出結構後，接著就是 SCSS 出場的時機了。
-還記得我們剛剛說過 SCSS 搭配 BEM 是很棒的組合嗎？
+After you find out the structure, then it's time to use SCSS.  
+Remember that? we said when you put them together, it will be a good combination.
 
-一段程式碼勝千言：
-
-  <!-- code is worth a thousand words -->
+Code is worth a thousand words :
 
 ```scss
 //  card component
@@ -278,19 +245,17 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-這樣子的結構，我相信比起原始的 CSS，應該是好理解很多的。
+I believe It's more clear than vanilla CSS. Right?😉
 
-所以我們就完成 `card` 這個組件囉：
+So, that's all for the `card` component.
 
 ![card](README-img/card.jpg)
 
-這裡我們預設讓`card`的顏色為橘色。
+By the way, this color is a default value of a card.
 
-所以以上就是整個 `card` 組件的製作流程囉，是不是簡潔又有力呢？
+#### Some CSS tricks
 
-#### 一些 CSS 的技巧
-
-關於桌機板的 3 欄格式，我本來是這樣子撰寫的：
+Regarding the 3-column layout on the desktop, this is my code at the beginning.
 
 ```scss
 @media screen and (min-width: 760px) {
@@ -303,7 +268,9 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-不過後來我想了一下，發現如果要讓他更彈性一點的話，可以改寫成這樣子：
+But I guess there should be an approach to make it more flexible.
+
+So I rewrite the code, and it looks like this :
 
 ```scss
 @media screen and (min-width: 760px) {
@@ -316,17 +283,25 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-`flex-grow` 的意思是：把 flex-box 中的剩餘空間根據設定 flex-item 設定的值來分配。
+`flex-grow` means: put the remaining space of flex-box into each flex-item.  
+The distribution of space depends on the `flex-grow` you set.
 
-所以拿這個範例來說就是，我有 3 個欄位，3 個欄位皆設定了 `flex-grow: 1`，代表總共有 3 等分，而每一個欄位都會拿走 1/3 的剩餘空間。<small>（換句話說就是 "每個欄位等寬"）</small>
+In this case, we have 3 columns, each column set `flex-grow` to 1.  
+So that's mean the sum is 3, and then a column takes 1 from the sum.  
+In other words, each column will take 1/3 space from the sum.
 
-假設現在的總寬度為 `900px` 的話，那每一個欄位的寬度就會是 `300px`。
+<small>I think this translation is not very well, but anyway, it means each column has "equal width".💦</small>
 
-#### 注意選取器的權重 ⚠
+So now suppose the width is `900px`, then each column's width will be `300px`.
 
-在透過 `media queries` 來覆寫前面的設定時，要很小心 **權重** 的問題。
+The benefit of this approach is no matter how many cards you create.
+It will keep the same width at the end.
 
-像我就犯了一個錯：
+#### Be careful with CSS specificity ⚠
+
+When you try to use `media queries` to overwrite the setting, you must be careful with CSS **specificity**.
+
+yeah.. I'm the first guy who makes this mistake :
 
 ```scss
 // Mobile version
@@ -369,9 +344,9 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-如果這樣子寫的話，`media queries` 是沒辦法覆寫掉前面的設定的，因為前者的權重比後面的重。
+If you write the code like that, it will not work. because the former has more specificity than the latter.
 
-如果你把編譯成 CSS 後的結果拿出來比較，你會更清楚這兩者的差異：
+It's more clear when it compiles to CSS.
 
 ```css
 /* Mobile */
@@ -389,11 +364,13 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-所以別像我一樣，不小心忽略了權重的問題，即便在電腦版中我們只有 `.card` 組件中的內容需要調整，也還是要注意前後者的權重關係，不然就會不小心踩到這個陷阱。
+So don't forget CSS specificity just like me.
 
-## Featurs（特色）
+Even though we only just change the properties in the `.card` component on the desktop, we still need to notice CSS specificity of both, otherwise, you may Step on the trap.
 
-我希望這個 `card` 組件能夠有一些自定義的功能，所以讓我們再添加一點原始碼吧！
+## Featurs
+
+I hope the card could be customized, so let's add some code!
 
 ```scss
 // optional style
@@ -408,9 +385,9 @@ If you want to create comments in the CSS, you have to write comments by using `
 }
 ```
 
-這樣子就能把喜歡的顏色套用到 `card` 囉。
+So now you can apply any colors to a `card` by your preference.
 
-來點不一樣的吧，讓我們來加個粉紅色 ✨
+Want something interesting? let's add a pink.✨
 
 ```scss
 $pink: #ffbcbc;
@@ -421,40 +398,40 @@ $pink: #ffbcbc;
 }
 ```
 
-💡 別忘了在 HTML 中加入新建立的 class
+💡 Don't forget to put the class into HTML.
 
 ```html
 <section class="card card--pink"></section>
 ```
 
-完工：
+Done：
 
 ![feature](README-img/feature.jpg)
 
-我知道你可能也注意到了，就是圖片的部分沒有隨著設定的顏色來做變化。
+I know you may notice that the picture doesn't look consistent with our setting.
 
-不過別擔心，這是因為我們使用的是**圖片檔**，如果你改使用 **icon-font**（像是 [FontAwesome](https://fontawesome.com/)） ，就能解決這個問題囉。
+Don't worry, it's because we use **image files** here, you can fix this problem by using **icon-font** (e.g., [FontAwesome](https://fontawesome.com/))
 
-做個簡單的示範：
+Here's a simple demo :
 
 ![icon](README-img/icon.jpg)
 
-總而言之，如果你還希望有什麼功能，只要試著去鑽研，相信都能找出解決辦法的。
+In conclusion, If you want to build a new feature, just delve into it, try to figure out the solution.
 
-最後就留給各位自行發揮囉！
+I believe there must be a way you can find it.
 
-## Author（關於作者）
+## Author
 
 - Website - [Jim's blog](https://jubeatt.github.io/)
 - Frontend Mentor - [Jim](https://www.frontendmentor.io/profile/jubeatt)
 - Facebook - [薛裕正](https://www.facebook.com/profile.php?id=100003593580513)
 
-## Acknowledgments（致謝）
+## Acknowledgments
 
-最後我想向[Anton](https://www.frontendmentor.io/profile/antarya)
-說聲謝謝，在我上一份[挑戰](https://www.frontendmentor.io/solutions/singlepricegridcomponent-by-using-flexbox-k-D7LL4wY)中給了我不少建議。
+In the end, I want to say thanks to [Anton](https://www.frontendmentor.io/profile/antarya), who gives me a lot of advice on the last [challenge](https://www.frontendmentor.io/solutions/singlepricegridcomponent-by-using-flexbox-k-D7LL4wY).
 
-因為有你的那些建議，讓我在這一次的挑戰中嘗試了我以前不曾使用過的 SCSS， BEM 的 class 命名方式，還有一些 CSS 的技巧（畫面的垂直置中）
+With your advice, I try the tools that I've never used on this challenge. (SCSS, BEM, and some CSS tricks, e.g., vertically centered)
 
-其實我這個人還蠻孤僻的 💦，也沒有想過有人在看完我的作品後，會給我這麼詳細的建議。  
-總而言之，我很慶幸自己能夠遇到你這樣子的 **"Mentor"** ，謝謝你 😊
+To be honest, I'm kind of a hermit💦, and I didn’t expect someone who watched the challenge would give me so useful suggestions.
+
+All in all, I appreciate that I can meet the **Mentor** who like you, Thank you.😊
