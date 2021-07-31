@@ -1,6 +1,6 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - 3-column preview card component
 
-這是來自[Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)的解答。  
+這是來自[3-column preview card component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)的解答。  
 Frontend Mentor challenges 是一個藉由實際建立專案，來提升 coding 技術的挑戰。
 
 ## 大綱
@@ -27,7 +27,7 @@ Frontend Mentor challenges 是一個藉由實際建立專案，來提升 coding 
 提示－你的使用者應該要能夠：
 
 - 在他們裝置上得到最佳化的佈局
-- 從互動式元件上獲得 "互動（interactive）" 的效果 <small>（Learn more 按鈕）</small>
+- 從互動式元件上獲得 "互動（interactive）" 的效果 <font size="2">（Learn more 按鈕）</font>
 
 ### 螢幕截圖
 
@@ -158,7 +158,7 @@ equal to:
 #### Get familiar with BEM （與 BEM 培養感情）
 
 當你學會 SCSS 後，再搭配 BEM 的方式來設計 class 名稱，會發現這是一個很方便的組合。  
-<small>小提醒：如果你不知道什麼是 BEM 的話，可以先看一下這篇[文章](https://ithelp.ithome.com.tw/articles/10160545)。</small>
+<font size="2">💡 小提醒：如果你不知道什麼是 BEM 的話，可以先看一下這篇[文章](https://ithelp.ithome.com.tw/articles/10160545)。</font>
 
 簡單來說，BEM 的三大概念就是：
 
@@ -282,7 +282,7 @@ equal to:
 
 `flex-grow` 的意思是：把 flex-box 中的剩餘空間根據設定 flex-item 設定的值來分配。
 
-所以拿這個範例來說就是，我有 3 個欄位，3 個欄位皆設定了 `flex-grow: 1`，代表總共有 3 等分，而每一個欄位都會拿走 1/3 的剩餘空間。<small>（換句話說就是 "每個欄位等寬"）</small>
+所以拿這個範例來說就是，我有 3 個欄位，3 個欄位皆設定了 `flex-grow: 1`，代表總共有 3 等分，而每一個欄位都會拿走 1/3 的剩餘空間。<font size="2">（換句話說就是 "每個欄位等寬"）</font>
 
 假設現在的總寬度為 `900px` 的話，那每一個欄位的寬度就會是 `300px`。
 

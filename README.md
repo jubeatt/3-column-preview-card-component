@@ -1,6 +1,6 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - 3-column preview card component
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [3-column preview card component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 **<font size="4">友情提示：如果你想看中文解說，可以點[這裡](https://github.com/jubeatt/3-column-preview-card-component-main/blob/master/README-zh.md)🎉</font>**
 
@@ -28,7 +28,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 Your users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements <small>（The Learn more button）</small>
+- See hover states for interactive elements <font size="2">（The Learn more button）</font>
 
 ### Screenshot
 
@@ -162,7 +162,7 @@ So keep in mind. it's important.
 #### Get familiar with BEM
 
 After you learned SCSS, It's time to meet BEM. It's a good combination when you put them together.  
-<small>Help：If you don't know what is BEM, you can read this [article](https://css-tricks.com/bem-101/) first.</small>
+<font size="2">💡 help：If you don't know what is BEM, you can read this [article](https://css-tricks.com/bem-101/) first.</font>
 
 In brief, the main points of BEM are :
 
@@ -288,9 +288,8 @@ The distribution of space depends on the `flex-grow` you set.
 
 In this case, we have 3 columns, each column set `flex-grow` to 1.  
 So that's mean the sum is 3, and then a column takes 1 from the sum.  
-In other words, each column will take 1/3 space from the sum.
-
-<small>I think this translation is not very well, but anyway, it means each column has "equal width".💦</small>
+In other words, each column will take 1/3 space from the sum.  
+<font size="2">I think my translation is not very well, but anyway, it means each column has "equal width".💦</font>
 
 So now suppose the width is `900px`, then each column's width will be `300px`.
 
