@@ -36,7 +36,7 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [Here](https://jubeatt.github.io/3-column-preview-card-component-main/)🥑
+- Live Site URL: [Here](https://jubeatt.github.io/3-column-preview-card-component/)🥑
 
 ## My process
 

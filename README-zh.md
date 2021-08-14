@@ -35,7 +35,7 @@ Frontend Mentor challenges 是一個藉由實際建立專案，來提升 coding 
 
 ### 連結
 
-- Live Site URL: [Here](https://jubeatt.github.io/3-column-preview-card-component-main/)🥑
+- Live Site URL: [Here](https://jubeatt.github.io/3-column-preview-card-component/)🥑
 
 ## 工作流程
 
